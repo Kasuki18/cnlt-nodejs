@@ -3,27 +3,27 @@ const server = http.createServer((req, res) => {
     console.log(req.url)
     if (req.url === "/") {
         res.writeHead(200, {
-            'Content-Type': 'text/plain; charset=utf-8'
+            'Content-Type': 'text/html; charset=utf-8'
         })
-        res.end("Trang chủ")
+        res.end("<h1>Trang chủ</h1>")
     }
     else if (req.url === "/about") {
         res.writeHead(200, {
-            'Content-Type': 'text/plain; charset=utf-8'
+            'Content-Type': 'text/html; charset=utf-8'
         })
-        res.end("Trang giới thiệu")
+        res.end("<h1>Trang giới thiệu</h1>")
     }
     else if (req.url === "/contact") {
         res.writeHead(200, {
-            'Content-Type': 'text/plain; charset=utf-8'
+            'Content-Type': 'text/html; charset=utf-8'
         })
-        res.end("Trang liên hệ")
+        res.end("<h1>Trang liên hệ</h1>")
     }
     else {
         res.writeHead(404, {
-            'Content-Type': 'text/plain; charset=utf-8'
+            'Content-Type': 'text/html; charset=utf-8'
         })
-        res.end("Không tìm thấy trang")
+        res.end("<h1>404</h1>")
     }
 })
 server.listen(3000, () => {
