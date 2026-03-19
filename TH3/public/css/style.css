@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #121212;
+    color: white;
+    margin: 0;
+}
+
+/* Navbar */
+nav {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #bbb;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #1db954;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: #181818;
+    border-radius: 12px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #282828;
+    transform: translateY(-5px);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 150px;     
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.detail-img {
+    width: 200px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Text */
+.card h3 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+/* HOT badge */
+.hot {
+    color: #1db954;
+    font-weight: bold;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 5px 10px;
+    background: #1db954;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
