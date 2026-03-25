@@ -1,0 +1,29 @@
+{
+  "name": "th3",
+  "version": "1.0.0",
+  "description": "Project TH3 NodeJS",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Lai Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "ejs": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kasuki18/cnlt-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kasuki18/cnlt-nodejs/issues"
+  },
+  "homepage": "https://github.com/Kasuki18/cnlt-nodejs#readme"
+}
