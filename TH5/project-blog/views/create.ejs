@@ -1,0 +1,22 @@
+<%- include('header') %>
+<main class="container--narrow form-page">
+    <form action="/posts/create" method="POST" class="post-form">
+        <h1 class="form-title">Sáng tạo nội dung</h1>
+        <div class="form-group">
+            <label>Tiêu đề <span class="required">*</span></label>
+            <input type="text" name="title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Tác giả</label>
+            <input type="text" name="author" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Nội dung <span class="required">*</span></label>
+            <textarea name="content" class="form-control form-textarea" required></textarea>
+        </div>
+        <div class="form-actions">
+            <a href="/" class="btn btn-outline">Hủy</a>
+            <button type="submit" class="btn btn-primary">Xuất bản</button>
+        </div>
+    </form>
+</main>

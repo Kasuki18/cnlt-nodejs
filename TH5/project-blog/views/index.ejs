@@ -1,0 +1,26 @@
+<%- include('header') %>
+<main class="container">
+    <section class="hero">
+        <h1 class="hero-title">Góc nhìn <em>Đa chiều</em></h1>
+        <p class="hero-sub">Nơi chia sẻ kiến thức và những câu chuyện cảm hứng.</p>
+    </section>
+
+    <div class="posts-grid">
+        <% posts.forEach(post => { %>
+            <article class="post-card">
+                <div class="badge">Bản tin</div>
+                <h2 class="post-card__title"><a href="/posts/<%= post._id %>"><%= post.title %></a></h2>
+                <p class="post-card__excerpt"><%= post.content.substring(0, 150) %>...</p>
+                <footer class="post-card__footer">
+                    <span class="post-author">Bởi <%= post.author %></span>
+                    <div class="post-actions">
+                        <a href="/posts/edit/<%= post._id %>" class="btn btn-outline btn-sm">Sửa</a>
+                        <form action="/posts/delete/<%= post._id %>" method="POST" class="inline-form">
+                            <button class="btn btn-danger btn-sm">Xóa</button>
+                        </form>
+                    </div>
+                </footer>
+            </article>
+        <% }) %>
+    </div>
+</main>
