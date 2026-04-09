@@ -1,0 +1,12 @@
+[4/9/2026, 3:01:47 PM] Event: Hệ thống khởi tạo lần đầu
+[4/9/2026, 3:01:49 PM] Event: User accessed Home
+[4/9/2026, 3:01:53 PM] Event: User accessed Home
+[4/9/2026, 3:01:54 PM] Event: User accessed Events
+[4/9/2026, 3:01:55 PM] Event: User accessed Home
+[Form]: henshin
+[Form]: Hà Anh Tuấn
+[4/9/2026, 3:50:10 PM] Event: User accessed undefined
+[4/9/2026, 3:50:27 PM] Event: User accessed undefined
+[4/9/2026, 3:52:05 PM] Event: User accessed undefined
+[4/9/2026, 3:54:39 PM] Event: User accessed undefined
+[4/9/2026, 3:54:39 PM] ACTION: Người dùng đã nhấn nút Kích hoạt

@@ -1,0 +1,34 @@
+<div class="container">
+    <link rel="stylesheet" href="/public/style.css">
+    <div class="card" style="text-align: center;">
+        <h2>🔔 EventEmitter Demo</h2>
+        <p>Hệ thống sử dụng cơ chế Event-Driven để ghi lại nhật ký hoạt động.</p>
+        <button onclick="triggerEvent()" style="padding: 15px 30px; font-size: 16px;">
+            Kích hoạt 'userAction' Event
+        </button>
+        <p id="status" style="margin-top: 20px; color: var(--primary-color); font-weight: bold;"></p>
+    </div>
+</div>
+
+<script>
+    function triggerEvent() {
+        const status = document.getElementById('status');
+        status.innerText = "⏳ Đang gửi tín hiệu...";
+
+        // Gửi yêu cầu đến endpoint /event trên server
+        fetch('/event')
+            .then(response => {
+                if (response.ok) {
+                    status.style.color = "green";
+                    status.innerText = "✅ Đã kích hoạt 'userAction' trên Server! Hãy kiểm tra Terminal và file log.txt.";
+                } else {
+                    status.style.color = "red";
+                    status.innerText = "❌ Lỗi khi kích hoạt sự kiện.";
+                }
+            })
+            .catch(err => {
+                status.style.color = "red";
+                status.innerText = "❌ Không thể kết nối tới Server.";
+            });
+    }
+</script>

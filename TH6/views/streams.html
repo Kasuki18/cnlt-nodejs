@@ -1,0 +1,33 @@
+<body>
+    <link rel="stylesheet" href="/public/style.css">
+    <nav>
+        <a href="/">Trang chủ</a>
+        <a href="/events">Events</a>
+        <a href="/request">Request</a>
+        <a href="/streams">Streams</a>
+    </nav>
+
+    <div class="container">
+        <h1>Quản lý Streams</h1>
+
+        <div class="card">
+            <h3>4.1 Readable Stream</h3>
+            <p>Đọc nội dung từ file <code>story.txt</code>:</p>
+            <iframe src="/read-stream" height="100"></iframe>
+        </div>
+
+        <div class="card">
+            <h3>4.2 Writable Stream</h3>
+            <form action="/write-stream" method="GET">
+                <input type="text" name="content" placeholder="Nhập nội dung ghi log...">
+                <button type="submit">Ghi vào File</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>4.3 Transform Stream</h3>
+            <p>Nội dung đã được biến đổi thành CHỮ HOA:</p>
+            <iframe src="/transform-stream" height="100"></iframe>
+        </div>
+    </div>
+</body>
