@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalo Clone - Realtime Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="login-screen" class="overlay">
+        <div class="login-box">
+            <h2>Chào mừng bạn!</h2>
+            <p>Nhập tên để bắt đầu trò chuyện</p>
+            <input type="text" id="username" placeholder="Tên của bạn..." autocomplete="off">
+            <button onclick="login()">Bắt đầu</button>
+        </div>
+    </div>
+
+    <div id="chat-container" class="app-wrapper" style="display: none;">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h3>Người dùng online</h3>
+            </div>
+            <ul id="user-list">
+                </ul>
+        </aside>
+
+        <main class="chat-area">
+            <header class="chat-header">
+                <h3 id="chat-with-title">Chọn một người để nhắn tin</h3>
+            </header>
+            
+            <div id="messages" class="message-list">
+                </div>
+
+            <div class="input-container">
+                <input type="text" id="msg-input" placeholder="Nhập tin nhắn..." autocomplete="off">
+                <button onclick="sendMessage()">Gửi</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
